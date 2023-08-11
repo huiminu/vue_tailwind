@@ -3,11 +3,8 @@
 // createApp
 import { createApp } from 'vue'
 import App from './App.vue'
-
-// router
 import router from "./router";
-
-// tailwind樣式
+import PrimeVue from 'primevue/config';
 import './assets/main.scss'
 
 // fortawesome
@@ -21,6 +18,7 @@ library.add(faShoppingCart, faInstagram, faFacebookSquare)
 const app = createApp(App);
 // 全局註冊
 app.component('font-awesome-icon', FontAwesomeIcon) 
-// 啟用 router
+// 啟用 
 app.use(router);
+app.use(PrimeVue, { unstyled: true });
 app.mount("#app");

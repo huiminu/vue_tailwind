@@ -20,6 +20,11 @@ const router = createRouter({
       component: () => import("../page/Components.vue"),
     },
     {
+      path: "/404",
+      name: "404",
+      component: () => import("../page/404.vue"),
+    },
+    {
       path: "/test",
       name: "test",
       component: () => import("../page/Test.vue"),
@@ -28,13 +33,14 @@ const router = createRouter({
           path:"step1",
           component: () => import("../page/Step1.vue"),
           // components:{
+          // 前面的名稱(badges) 是對應router-link的name
           //   badges:()=>import('../components/Badges.vue'),
           //   button:()=>import('../components/Button.vue')
           // },
         },
         {
-          path:"step2",
-          component: () => import("../page/Step2.vue"),
+          path:"primevue",
+          component: () => import("../page/PrimevueTest.vue"),
         },
       ]
     },
@@ -42,7 +48,7 @@ const router = createRouter({
     {
       // *表示全局皆吃的到
       path:'/:pathMatch(.*)*',
-      component: () => import("../page/Step2.vue"),
+      component: () => import("../page/404.vue"),
     },
     // 重新導向 : 直接把用戶導入到正確頁面
     // 在test頁面下 重新導向到首頁(test/step1/step2都會作用)

@@ -12,7 +12,7 @@
                 <span class="mx-2">|</span> 
                 <router-link class="header-link" active-class="active-bg" to="/test/step1">step-1</router-link>
                 <span class="mx-2">|</span> 
-                <router-link class="header-link" active-class="active-bg" to="/test/step2">step-2</router-link>
+                <router-link class="header-link" active-class="active-bg" to="/test/primevue">step-2</router-link>
             </div>
         </div>
         <div class="flex space-x-3 items-center">

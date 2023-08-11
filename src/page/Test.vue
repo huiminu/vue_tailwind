@@ -7,11 +7,11 @@
     };
 </script>
 <template>
-    <div class="pt-4">
+    <div>
         <testStep/>
-        <router-view></router-view>
-        <p class="text-center mt-10">step元件</p>
-        <router-view name="badges"></router-view>
-        <router-view name="button"></router-view>
+        <!-- step1 跟 primevue 的內容放置位置 -->
+        <router-view class="p-4"></router-view>
+        <!-- <router-view name="badges"></router-view>
+        <router-view name="button"></router-view> -->
     </div>
 </template>

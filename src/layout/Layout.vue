@@ -7,5 +7,5 @@ import sidebar from './Sidebar.vue'
     <headerLayout />
     <sidebar />
     <!--RouterView 顯示內頁樣式  -->
-    <RouterView class="ml-[110px]" />
+    <RouterView class="ml-[110px] mt-[40px]" />
 </template>

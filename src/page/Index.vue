@@ -68,7 +68,7 @@ export default {
 };
 </script>
 <template>
-    <div class="flex-row ml-[150px] mt-[60px] p-4 space-y-5">
+    <div class="flex-row p-4 space-y-5">
         <indexButton class="ml-auto" buttonColor="light" text="新增" @click="addProducts()" />
         <table class="w-full">
             <thead class="border-b text-left">

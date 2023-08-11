@@ -2,15 +2,15 @@
     <div class="step">
         <ul class="step-content">
             <li class="step-items">
-                <router-link to="/test/step1" name="step1" active-class="step-items-active">
+                <router-link to="/test/step1" active-class="step-items-active">
                     <div class="step-line"></div>
                     step1
                 </router-link>
             </li>
             <li class="step-items">
-                <router-link to="/test/step2" name="step2" active-class="step-items-active">
+                <router-link to="/test/primevue" active-class="step-items-active">
                     <div class="step-line"></div>
-                    step2
+                    primevue
                 </router-link>
             </li>
         </ul>
@@ -18,7 +18,7 @@
 </template>
 <style scoped lang="scss">
 .step{
-    @apply h-[92px] bg-gray-200 z-20 sticky top-10 left-0 right-0 px-5 flex items-center;
+    @apply h-[92px] bg-gray-200 z-20 sticky top-[40px] left-0 right-0 px-5 flex items-center;
     &-content{
         @apply flex mx-auto space-x-1.5 text-sm font-normal w-full md:w-[840px];
     }
