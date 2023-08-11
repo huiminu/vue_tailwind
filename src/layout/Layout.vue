@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import headerLayout from './header.vue'
+import headerLayout from './Header.vue'
 import sidebar from './Sidebar.vue'
 </script>
 <template>
