@@ -42,10 +42,11 @@ export default {
         </div> -->
         <h2>button 按鈕</h2>
         <div class="flex space-x-3">
-            <ButtonComponent buttonColor="primary" @click="getRoute" text="getRoute" />
-            <ButtonComponent buttonColor="secondary" @click="getRouter" text="getRouter" />
-            <ButtonComponent buttonColor="info" text="info" />
-            <ButtonComponent buttonColor="light" text="info"  />
+            <button class="btn btn-primary">123123</button>
+            <ButtonComponent buttonColor="primary" @click="getRoute" label="getRoute" />
+            <ButtonComponent buttonColor="secondary" @click="getRouter" label="getRouter" />
+            <ButtonComponent buttonColor="info" label="info" />
+            <ButtonComponent buttonColor="light" label="info"  />
         </div>
         <h2>Badges 標籤 <span class="text-base">預設灰色</span></h2>
         <div class="flex space-x-2">
@@ -61,9 +62,9 @@ export default {
         </div>
         <h2>pagination</h2>
         <div class="flex">
-            <ButtonComponent buttonColor="light" text="<" />
-            <ButtonComponent v-for="page in 5" buttonColor="light" :text="page" :key="page"/>
-            <ButtonComponent buttonColor="light" text=">" />
+            <ButtonComponent buttonColor="light" label="<" />
+            <ButtonComponent v-for="page in 5" buttonColor="light" :label="page" :key="page"/>
+            <ButtonComponent buttonColor="light" label=">" />
         </div>
         <h2>tab</h2>
         <div class="flex w-full">

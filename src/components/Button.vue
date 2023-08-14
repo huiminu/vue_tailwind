@@ -1,17 +1,15 @@
 <template>
-    <button @click="handleClick" :class="['btn', buttonColorClass]">
-        {{ text }}
-    </button>
+    <Button @click="handleClick" :class="['btn', buttonColorClass]" />
 </template>
 <script>
 // 導出模塊的預設
 export default {
     // 
     props: {
-        text: {
-            type: String,
-            default: '按鈕預設文字', // 預設按鈕文字
-        },
+        // text: {
+        //     type: String,
+        //     default: '按鈕預設文字', // 預設按鈕文字
+        // },
         buttonColor: {
             type: String,
             default: 'default',  //預設按鈕顏色 
@@ -52,7 +50,9 @@ export default {
 <style lang="scss">
 .btn {
     @apply h-10 px-[14px] text-base font-normal rounded-[4px] leading-[22px] flex items-center;
-
+    span[data-pc-section="icon"]{
+        @apply mr-2;
+    }
     &-primary {
         @apply bg-primary-500 text-white hover:bg-primary-600;
 
@@ -82,4 +82,5 @@ export default {
             @apply bg-gray-500;
         }
     }
-}</style>
+}
+</style>

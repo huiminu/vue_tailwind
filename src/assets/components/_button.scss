@@ -1,0 +1,88 @@
+.btn{
+    @apply h-9 px-[14px] text-base font-normal rounded-[4px] leading-[22px] flex items-center;
+    &-sm{
+        @apply h-7;
+    }
+    &-text{
+        @apply hover:font-medium;
+        &:disabled{
+            @apply text-gray-500;
+        }
+    }
+    &-outline-secondary{
+        @apply bg-gray-200 text-gray-600 border border-gray-400 hover:bg-gray-400;
+        &:disabled{
+            @apply text-gray-500 bg-gray-200;
+        }
+    }
+    &-secondary{
+        @apply bg-gray-600 text-white hover:bg-gray-700;
+        &:disabled{
+            @apply text-gray-500 bg-gray-400;
+        }
+    }
+    &-primary{
+        @apply bg-primary-500 text-white hover:bg-primary-600;
+        &:disabled{
+            @apply text-gray-500 bg-gray-400;
+        }
+    }
+    &-info{
+        @apply bg-secondary-700 text-white hover:bg-secondary-800;
+        &:disabled{
+            @apply text-gray-500 bg-gray-400;
+        }
+    }
+    &-file{
+        @apply relative;
+        [type='file']{
+            @apply absolute top-0 left-0 opacity-0 cursor-pointer;
+        }
+    }
+    &-light{
+        @apply bg-white text-gray-600 border border-gray-400 hover:outline hover:outline-1 hover:outline-gray-400;
+        &:disabled{
+            @apply bg-gray-500;
+        }
+    }
+}
+
+.icon-btn{
+    @apply h-9 px-[10px] text-base font-normal rounded-[4px] leading-[22px] flex items-center;
+}
+
+.badges{
+    @apply h-6 rounded-[4px] border px-1 text-sm font-normal leading-5 text-gray-600 border-gray-400 bg-white;
+    &-outline-secondary{
+        @apply bg-gray-200 text-gray-600 border-gray-400;
+    }
+    &-success{
+        @apply text-success-500 border-success-200;
+    }
+    &-danger{
+        @apply text-danger-500 border-danger-100;
+    }
+    &-warning{
+        @apply text-warning-600 border-warning-200;
+    }
+}
+
+.toggle-btn{
+    &::after{
+        content: '展開';
+    }
+    .toggle-icon{
+        @apply w-6 h-6 bg-no-repeat bg-contain inline-block;
+        background-image: url('../../imgs/icon/Icon_add-primary.png');
+    }
+}
+.toggle-btn.show{
+    &::after{
+        content: '收起 ';
+    }
+    .toggle-icon{
+        @apply w-6 h-6 bg-no-repeat bg-contain inline-block;
+        background-image: url('../../imgs/icon/Icon_minus-primary.png');
+    }
+}
+

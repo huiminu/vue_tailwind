@@ -4,7 +4,7 @@
         <div class="flex items-center">
             <!-- 電腦 -->
             <div class="hidden md:flex md:items-center px-2">
-                <router-link class="header-link" to="/">首頁</router-link>
+                <router-link class="header-link" to="/">六腳練習</router-link>
                 <span class="mx-2">|</span> 
                 <router-link class="header-link" to="/components">components</router-link>
                 <span class="mx-2">|</span> 
